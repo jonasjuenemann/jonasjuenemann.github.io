@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Jonas Jünemann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="ProjectsStyle.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <script
+            src="https://kit.fontawesome.com/836a943e18.js"
+            crossorigin="anonymous"
+            defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body id="projects-page">
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="index.html">
+
+                </a>
+            </div>
+            <div class="burger-menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="theme-selector has-dropdown">
+                <div class="moon"><a><i class="far fa-moon fa-2x"></i></a></div>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="light" href="#">light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark" href="#">dark</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#landing-page">
+                        <img
+                                src="images/profile-pic.jpg"
+                                alt="Jonas Juenemann"
+                                class="profile-pic nav-link"
+                        />
+                        <span class="caption nav-link">Jonas Jünemann</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projekte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item socials">
+                    <a href="#" target="_blank" class="nav-link left-link">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link">
+                        <i class="fa fa-xing"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="landing-page" class="landing-page">
+    <div class="container">
+        <div class="main-message">
+            <h3>Projekte</h3>
+            <p>Eine etwas ausführlichere Übersicht über meine durchgeführten Projekte</p>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <div class="wrapper">
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/Speed.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Beschleunigung von Python-Implementationen</h2>
+                <p>
+                    Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                    Beschaffenheiten Python, besonders, wie eine Python Implementation ausgeführt wird und wie dies
+                    unter Umständen zu beschleunigen wäre.
+                    Hierfür wurde eine implementation des bekannten Conways Game of Life vorgenommen, zunächst in
+                    Python.
+                    Anschließend wurde diese erweitert durch Implementationen mit C++, mit Python in Verbindung mit
+                    Cython und mit C++ Extensions.
+                    Im letzten Schritt wurde GPU Programmierung mit CUDA implementiert und als Vergleichsmaßstab
+                    genommen.
+                </p>
+                <div>
+                    <a href="#project-item-1" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/BAProjekt" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="cuda dot"></span>Cuda</span>
+                    <span class="tech-btn"><span class="c dot"></span>C++</span>
+                    <span class="tech-btn"><span class="cython dot"></span>Cython</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/ML.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Machine Learning</h2>
+                <p>
+                    Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                    faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
+                    Algorithmen verschafft.
+                    Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                    Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                    diese für Python bietet.
+                    Anschließend habe ich mir dann interessante Datensets gesucht, meist über
+                    <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                    um zu sehen, inwieweit sich
+                    ML-ALgorithmen nutzen lassen um aus diesen Daten aufschlussreiche Erkenntnisse ziehen zu können.
+                    Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
+                    genutzt.
+                </p>
+                <div>
+                    <a href="#project-item-2" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/MachineLearning" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="sklearn dot"></span>sklearn</span>
+                    <span class="tech-btn"><span class="pyplot dot"></span>matplotlib</span>
+                    <span class="tech-btn"><span class="pandas dot"></span>pandas</span>
+                    <span class="tech-btn"><span class="oop dot"></span>OOP</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/FinanceData.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>FinanzDaten</h2>
+                <p>
+                    Da ich Spaß am Investieren in Aktien und Crypto-Währungen habe, habe ich relativ schnell ein Projekt
+                    gestartet, um
+                    meine Python Kenntnisse hierbei einsetzen zu können.
+                    Python hat sich hier als Programmiersprache  für
+                    die auf Datenanalyse ausgelegten Aufgaben recht natürlich angeboten.
+                    Das Ziel war, Daten für verschiedene Aktien zu finden
+                    und diese zu analysieren.
+                    Die Daten können dabei sehr entspannt über die Pandas Datareader API erhalten werden.
+                    Für die Arbeit diesen habe ich dann primär die Python Bibliothek Pandas, an manchen Stellen numpy
+                    genutzt.
+                    Zur Visualisierung der Daten wurde dann die matplotlib Bibliothek genutzt.
+                </p>
+                <div>
+                    <a href="#project-item-4" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/FinancialData" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="pyplot dot"></span>matplotlib</span>
+                    <span class="tech-btn"><span class="pandas dot"></span>pandas</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/backend.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Flask-Backend mit Datenbank</h2>
+                <p>
+                    <span class="wip">Work-In-Progress.</span>
+                    Eine flask-App mit SQL-Datenbank im Hintergund.
+                    Ein größeres Projekt ist zur Zeit in Arbeit, aber noch nicht für eine Live-Demo bereit.
+                    Aktuell ist dies lediglich ein kleineres Projekt.
+                    Dieses arbeitet mit User Accounts, die in der Datenbank gespeichert werden. In der Entwicklung wird
+                    hierbei SQLLite, für das Deployment
+                    dann PostgreSQL genutzt.
+                    Außerdem können Reiseziele für Gruppen von leuten vorgeschlagen werden.
+                </p>
+                <div class="project-links">
+                    <a href="#project-item-5" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://mysterious-forest-78527.herokuapp.com/" class="project-link more-info"
+                       target="_blank"><i class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="https://github.com/jonasjuenemann/TravelPlanner" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="sql dot"></span>SQL</span>
+                    <span class="tech-btn"><span class="flask dot"></span>Flask</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/React.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Playlist-Ersteller via React</h2>
+                <p>
+                    Eine React-App, die in Verbindung mit der Nutzung der Spotify API funktioniert.
+                    Es können aus der Spotify Bibliothek Titel gesucht und in eine Playlist gespeichert werden.
+                    Diese Playlist kann wiederum automatisch in Spotify übertragen werden.
+                    Vorraussetzung für die Nutzung der App ist ein funktionierender Spotify Account. Die Anmeldung
+                    erfolgt dann über ein OAuth2 Verfahren.
+                </p>
+                <div>
+                    <a href="#project-item-3" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="http://plbuilder.surge.sh/" class="project-link more-info" target="_blank"><i
+                            class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="https://github.com/jonasjuenemann/playlistbuilder" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="api dot"></span>API</span>
+                    <span class="tech-btn"><span class="react dot"></span>React</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/Portfolio.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Portfolio-Website</h2>
+                <p>
+                    Ein großes Projekt bezüglich Front-End-Design mit CSS und JS/Jquery ist außerdem diese
+                    Portfolioseite selbst.
+                    Für Front-End Interessierte ist daher hier auch der Code dieser Website zu finden.
+                    Für so manche Funktionalität wurden hier CSS-Tricks angewendent, an anderen Stellen dann JS
+                    verwendet.
+                </p>
+                <div>
+                    <a href="#project-item-6" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/PortfolioWebsite" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="bootstrap dot"></span>Bootstrap</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/Sightseeing.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Sightseeing-Website</h2>
+                <p>
+                    Eine etwas interessantere Varation der recht bekannten Wetter-Applikation.
+                    Die Idee war hier vor allem die Nutzung von APIs besser zu verstehen.
+                    Dabei werden die Html Elemente jeweils per Javascript aus den Ergebnissen der API-Abfrage generiert.
+                </p>
+                <div>
+                    <a href="#project-item-7" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://frosty-cori-daf3c9.netlify.app" target="_blank" class="project-link more-info"><i
+                            class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="https://github.com/jonasjuenemann/Project_Sightseeing" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="ajax dot"></span>AJAX</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/calculator.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Calculator-App</h2>
+                <p>
+                    Eines der wenigen Projekte, in denen ich tatsächlich mal außerhalb der Universität Java verwendet
+                    habe,
+                    ist die Arbeit mit AndroidStudio für Mobile (Android-) Apps.
+                    Offensichtlich bin ich hier allerdings noch Beginner, dies bspw. eine simple Taschenrechner-App.
+                    Hierbei wurde der Umgang mit Views und Intents sowie die allgemeine Arbeit mit AS/XML geübt.
+                </p>
+                <div>
+                    <a href="#project-item-8" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/SimpleCalculator" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="android dot"></span>AndroidStudio</span>
+                    <span class="tech-btn"><span class="java dot"></span>Java</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <hr id="last-hr"/>
+    <div class="footer-nav">
+        <a href="projects.html" class="footer-nav-link">Home</a>
+        <a href="projects.html#projects" class="footer-nav-link">Projekte</a>
+        <a href="index.html#contact" class="footer-nav-link">Kontakt</a>
+    </div>
+    <div class="footer-coded">
+    </div>
+    <div class="footer-social socials">
+        <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-xing"></i></a>
+    </div>
+</footer>
+<div class="project-lightbox" id="project-item-1">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Beschleunigung von Python-Implementationen</h3>
+            <p> Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                Beschaffenheiten Pythons, im speziellen damit, wie eine Python Implementation ausgeführt wird und wie dieser Prozess
+                unter Umständen zu beschleunigen wäre. Primäres Testobjekt war dabei eine
+                Implementation des relativ bekannten Game of Life von J.H. Conway. </p>
+
+            <img class="Gol gif" src="images/GoL.gif" alt="Conways Game of Life"/>
+            <figcaption>Visualisierung des GoL auf einem 128x128 Feld (via matplotlibs FuncAnimation).</figcaption>
+
+
+            <p>Der Fokus des Projekts lag dabei nicht auf der algorithmischen Laufzeit im Sinne der O() Notation, sondern
+                auf der Ausführung mittels bspw. anderer Möglichkeiten als der standardmäßig verwendeten CPython Implementation.
+                Hierbei war zum einen die Auslagerung von Teilen des Codes nach C mittels Cython eine relevante Option.
+                Zum Anderen die Auslagerung nach C++ und dem entsprechenden g++ Compiler mit bspw. pybinds11.</p>
+
+            <p>Als zweiten Schritt des Projektes wurde dann numba als Möglichkeit der "Auslagerung" in eine andere Ausführungsart
+                innerhalb von Python betrachtet.
+                Hierbei wird spezifisch der Python Interpreter umgangen, indem Just-In-Time mit der LLVM Architektur
+                kompiliert wird, was tendenziell wesentliche Geschwindigkeits-Vorteile birgt.
+                Betrachtet wurde hier neben der Geschwindigkeit auch Kompatibilität innerhalb von Python als wichtiger Faktor.</p>
+
+            <p>Als letztes wurde dann eine Auslagerung der Code Ausführung von der CPU auf die GPU betrachtet. Dies stellt für
+                Python eine wirklich hervorragende Möglichkeit
+                dar, da dies bei einer parallelen Ausführung auf den tausenden Kernen einer GPU den Prozess enorm beschleunigt.
+                So wurde spezifisch für Python herausgestellt, wie (verhältnismäßig) leicht sich aus Python heraus auf der GPU
+                arbeiten lässt.
+                Gleichzeitig wurde zumindest angemerkt, dass die Installation und das Setup, gerade auf einer Windows-Maschine, einen
+                durchaus beträchtlichen Aufwand darstellen kann.
+                Im Rahmen des Projektes wurde die GPU_Programmierung dabei Nvidia's CUDA Framework verwendet.
+                Spezifisch wurde im Rahmen des Projektes herausgestellt, wie viel schneller eine GPU Ausführung ist,
+                auch im Vergleich mit einer C++ Ausführung.</p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-2">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Machine Learning Project</h3>
+            <p> Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
+                Algorithmen verschafft.
+                Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                diese für Python bietet.
+                Diese habe ich daher auch an verschiedenen Stellen genutzt.
+                Primärer Hintergrund war hier auch nicht die Neuentwicklung der Algorithmen, sondern diese möglichst
+                einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
+            </p>
+            <p>
+                Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen ML-Algorithmen.
+                Diese waren mir noch aacus der Uni bekannt, und umfassen primär die Lineare Regession sowie die Multiple Lineare Regression.
+                Anschließend wurden dann zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
+                der K-Nearest Neighbor Algorithmus betrachtet.
+                Später warem dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und
+                der Naive Bayes Klassifzierer, der vor allem für die Einschätzung von Textnachrichten im Sinne des Natural Language Processing
+                eine wichtige Rolle besitzt, im Fokus.
+            </p>
+            <p>
+                Im letzten Schritt habe ich dann nicht überwachte ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
+                hierfür habe ich dann bspw. einen (simplen) Handschriftserkenner mit sklearn gebaut.
+            </p>
+            <div class="hide" id="handwriting">
+                <p>
+                    Probieren Sie diesen doch gerne einmal aus! Die Idee ist relativ simpel, Sie können in die unten stehenden Kästchen jeweils eine Zahl schreiben.
+                    Dann können Sie den Button "Überprüfen" klicken.
+                </p>
+                <p>
+                    An dieser Stelle werden dann ihre handschriftlichen Zahlen per JavaScript in eine 2D Matrix umgewandelt,
+                    die ein Programm verstehen kann. Anschließend wird dieses Array an eine von mir erstellte flask-API geschickt.
+                    In dieser wird dann mit K-Means-Algorithmus aus ihrer Handschrift mit sklearn und anhand eines Traningsdatensets (hoffentlich) korrekt ihre vierstellige
+                    Zahl ermittelt, und zurückgesendet.
+                    Meistens sind allerdings lediglich 2-3 der Zahlen korrekt erkannt, insbesonders mit der 3, 8 und 9 hat der Algorithmus zugegebenerweise etwas zu kämpfen,
+                    diese korrekt zu identifizieren.
+                </p>
+            </div>
+            <p>
+                Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den Anfängen des Deep-Learning.
+                Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher hat mir an dieser
+                auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und der sklearn Bibliothek beschäftigen wollte.
+                Deep Learning und u.U. Natural Language Processing sind aber Themen, die ich in einem nächsten Projekt angehe.
+            </p>
+            <p>
+                Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir üblicherweise interessante Datenset gesucht,
+                eine große Hilfe war dabei <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine Menge möglicherweise hilfreicher
+                Ressourcen in diesem Bereich.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-3">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Spotify-Applikation mit React</h3>
+            <p>
+                In dem Bestreben, React weiter zu erkunden und zu lernen, habe ich ein Projekt entwickelt, dass
+                React für eine Webapplikation benutzt, aus der aus auf die Spotify API zugegriffen werden kann.
+                Die grundlegende Funktionalität der App ist dabei recht simpel, so ermöglicht diese das
+                Zusammenstellen
+                einer Playlist.
+                Hierfür kann zunächst ein gewünschter Titel gesucht werden.
+                Anschließend werden für diesen Titel entsprechende Spotify Ergebnisse vorgestellt.
+                Titel aus den Ergebnis können dann wiederum zu einer Playlist hinzugefügt werden. Diese kann
+                umbenannt
+                werden und ist anschließend für den Spotify-Account verfügbar.
+            </p>
+            <p>
+                Vorraussetzung für die Nutzung der App ist also ein funktionierender Spotify Account. Die Anmeldung
+                erfolgt dann
+                über ein OAuth2 Verfahren, bei dem man sich bei Spotify selbst anmelden muss.
+                (Geschieht automatisch beim ersten Suchdurchlauf nach einem Titel).
+                Das OAuth2 Verfahren erlaubt dadurch dabei eine vollständig Front-End basierte Nutzung der API ohne die
+                Gefahr,
+                API Keys zu gefährden.
+            </p>
+            <p>
+                Die App ist ansonsten auch noch Work-in-Progress. Weitere Funktionalitäten, sowie eine etwas verbesserte
+                User-Experience beim Anmeldeprozess
+                sind aktuell in Arbeit.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-4">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">FinanzDaten</h3>
+            <p>
+                Da ich selber Spaß am Investieren in Aktien und Crypto-Währungen habe, habe ich relativ schnell ein Projekt
+                gestartet, um
+                meine Programmierkenntnisse hierfür einsetzen zu können. Python hat sich hier als Programmiersprache für
+                die auf Datenanalyse ausgelegten Aufgaben recht natürlich angeboten.
+                Dabei war nicht das primäre Ziel, einen tatsächlichen Bot zu entwicklen der für mich handelt, sondern
+                eher,
+                die Daten für verschiedene Aktien zu finden
+                und mit diesen zu arbeiten.
+                Die Daten können dabei sehr entspannt über die Pandas Datareader API erhalten werden.
+                Für die Arbeit diesen habe ich dann primär die Python Bibliothek Pandas, an manchen Stellen numpy
+                genutzt.
+                Zur Visualisierung der Daten wurde dann die matplotlib Bibliothek genutzt.
+            </p>
+            <p>
+                Die Idee des Projektes ist, unter anderem aufgrund von Daten über einzelne Aktien besser begründete
+                Entscheidungen treffen zu können.
+                Wichtiger aber war für mich, dass Zusammenspiel verschiedener Aktien zu untersuchen, indem hier bspw.
+                Korrelationsanalysen zwischen den verschiedenen
+                Aktien gemacht werden können.
+            </p>
+            <p>
+                Gemündet ist dies in einem Portfolio Vergleich, bei dem Bündel aus Aktien genommen werden
+                und ermittelt wird, in welcher Verteilung
+                sich aus diesen ein optimales Portfolio zusammenbauen lässt. So wurde die durchschnittliche Performance der
+                Aktie in Verbindung der Korrelation der Aktie
+                mit Anderen betrachtet. Ziel ist hier, bei sehr hoher Korrelation die jeweils besser
+                performende Aktien ins Portfolio zu nehmen, gleichzeitig aber ins
+                Portfolio auch niedrig korrelierte, im Optimalfall sogar negativ korrelierte Aktien aufzunehmen, um das
+                Portfolio so gegen Schwankungen abzusichern.
+                Bezüglich Schwankungen wurde außerdem die Varianz der Aktie als Indiz für die Volatilität betrachtet,
+                häufig sind volatilere Aktie risikoreicher, haben aber auch eine bessere Performance.
+                Letztlich wurde dies dann auf einem sog. "Efficient Frontier" zusammengeführt, was jeweils die besten
+                Portfolio-Zusammenstellung (der betrachteten Aktien) für jede mögliche Varianz (Volatilität) ermittelt.
+                Üblicherweise geht die Performance eines solchen EF Portfolios bei steigender Volatilität hoch.
+            </p>
+            <p>
+                Größtes Problem bei diesen Betrachtungen ist generell, dass es sich hier um Vergangenheitsdaten
+                handelt, von denen Schlüs,se auf die Zukunft gezogen werden
+                sollen. Entsprechend sind die Ergebnisse mit Vorsicht zu betrachten, da Ereignisse in der Gegenwart
+                massiven Einfluss auf die Märkte als Ganzes haben können
+                von einem Daten-getriebenen Modell aber nicht mit einkalkuliert werden.
+            </p>
+            <p>
+                Weitere Projekte im Zusammenhang mit FinanzDaten waren dann unter anderem ein Bot, der mittels eines
+                tensorflow Deep Learning Modells den Kurs einer Aktie für den nächsten Tag
+                vorhersagen soll. Auch dies hat natürlich wieder das Problem, dass der Bot gerade spontane Ausschläge
+                aufgrund von Nachrichten nicht vorhersagen kann.
+                So kann der Bot für wenig volatile Aktien, wie Coca-Cola, Procter&Gamble oder die deutsche Allianz, ganz
+                gute Ergebnisse hervorbringen.
+                Für volatile, sehr Nachrichten-abhängige Aktienverläufe, z.B. Tesla oder Gamestop, war dieser aber wenig
+                akkurat.
+            </p>
+            <p>
+                Ein weiteres Projekt war dann ein Bot zur Sentiment Analyse auf das, durch die Gamestop Kapriolen, bekannt gewordene
+                Reddit-Forum "WallsteetBets".
+                Dieser misst relativ akkurat welche Aktien-Ticker (z.B: $GME, $AMC) in der letzten Zeit viel in dem Forum erwähnt
+                wurden, und daher unter Umständen in nächster
+                Zeit eine stärkere Volatität haben könnten.
+            </p>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+</html>

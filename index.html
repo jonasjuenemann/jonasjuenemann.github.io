@@ -1,13 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Jonas Jünemann</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="sss/sss.css" media="all"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <script
+            src="https://kit.fontawesome.com/836a943e18.js"
+            crossorigin="anonymous"
+            defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
+    <script src="sss/sss.js" defer></script>
+    <script src="main.js" defer></script>
+
 </head>
 <body>
-<h1>Jonas Jünemann</h1>
-<h2>Work in Progress, check back later!</h2>
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="index.html">
 
+                </a>
+            </div>
+            <div class="burger-menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="theme-selector has-dropdown">
+                <div class="moon"><a><i class="far fa-moon fa-2x"></i></a></div>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="light" href="#!">light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark" href="#!">dark</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#landing-page">
+                        <img
+                                src="images/profile-pic.jpg"
+                                alt="Jonas Juenemann"
+                                class="profile-pic nav-link"
+                        />
+                        <span class="caption nav-link">Jonas Jünemann</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projekte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item socials">
+                    <a href="#" target="_blank" class="nav-link left-link">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link">
+                        <i class="fa fa-xing"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="landing-page">
+        <div class="landing-background"></div>
+        <div class="container landing-page">
+            <div class="main-message">
+                <h2> Jonas Jünemann </h2>
+                <h3>Software Entwicklung <br> und Data Science</h3>
+                <p>Python . JavaScript . Html&CSS . OOP . Java . SQL</p>
+                <div class="intro-btn">
+                    <div class="cta">
+                        <a href="#about" class="btn">Über mich</a>
+                        <a href="#projects" class="btn">Projekte</a>
+                        <a href="#contact" class="btn">Kontakt</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#about" class="scroll-down">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-img">
+                <img
+                        src="images/profile-pic.jpg"
+                        class="about-pic"
+                        alt=""
+                />
+            </div>
+            <div class="about-text-box">
+                <h2>Hi!</h2>
+                <p>
+                    Ich bin Jonas Jünemann, ein aspirierender Software Entwickler aus dem schönen Münster.
+                    Dort bin ich zur Zeit Wirtschaftsinformatik Student an der Universität, wobei ich gerade meinen
+                    Bachelor beende.
+                    Neben dem Studium bin ich privat gerne und viel am programmieren, wobei ich primär im Bereich Data
+                    Science und Webentwicklung arbeite.
+                    Am liebsten, aber nicht ausschließlich, arbeite ich dabei mit Python oder Javascript, gelegentlich auch mit Java, C++ und php.
+                </p>
+                <p>
+                    Im WI-Studium standen standen für mich vor allem die Arbeit mit Daten und Objektorientiertes
+                    Programmieren mit Java sowie informatische Algorithmik im Fokus.
+                    Vor allem über die letzten zwei Jahre habe ich zudem vermehrt private Projekte
+                    in der Webentwicklung durchgeführt.
+                    So habe ich mir unter anderem Html/CSS, Javascript beigebracht und habe
+                    Frontend-Entwicklung gelernt.
+                    Dies wurde ergänzt durch Backend Projekte vor allem in Python über Flask und Django. Hierbei konnte
+                    ich dann sehr gut Kenntnisse aus dem WI-Studium bezüglich der Arbeit mit Datenbanken mit (primär) SQL einbringen.
+                    Neben der Webentwicklung gab es aber auch zahlreiche Projekte aus dem Bereich Data Science, u.a. mit Machine-Learning
+                    Algorithmen.
+                    Einen Überblick über meine (größeren) Projekte, können Sie gerne <a href="projects.html#projects">hier</a> finden.
+                </p>
+                <p>
+                    Ansonsten bin ich privat ein enthusiastischer und gelegentlich erfolgreicher Investor mit Aktien, ETFs und kryptowährungen.
+                    Dies schlägt sich tendenziell auch in meinen Projekten nieder, so sind bspw.
+                    einige meiner Projekte darauf orientiert, entweder auf Grundlage von
+                    Daten über Aktienpreise Schlussfolgerungen ziehen zu können, oder aber
+                    über Machine Learning Algorithmen Preise für diese vorherzusagen.
+                    Außerdem bin ich leidenschaftlicher Gamer, meist in Multiplayer-Spielen zusammen mit Freunden.
+                    Entsprechend sind auch einige Projekte mit diesem Fokus vorgenommen worden.
+                    Darüber hinaus betreibe ich gerne Sport, auch wenn dies durch die Corona Situation im letzten Jahr sicherlich etwas
+                    komplizierter gemacht wurde.
+                </p>
+            </div>
+        </div>
+        <hr/>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="title-heading">
+                <h2>Mein Skillset</h2>
+            </div>
+            <div class="service-tiers">
+                <div class="slider">
+                    <div class="tier-item">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <h2>Software Engineering</h2>
+                        <p>
+                            Meine präferierte Programmiersprache stellt sicherlich Python dar,
+                            Javascript habe ich ansonsten primär privat für Projekte im Bereich Web-development
+                            kennengelernt.
+                            Angefangen habe ich über die Universität in Java und zu Beginn auch viel in Java programmiert.
+                            Um Frontend Development von Grund auf erlernen zu können, habe ich mir dann Html sowie CSS angeeignet.
+                            Sowohl über die Uni, als auch über eigene Projekte mit Datenbanken habe ich außerdem SQl
+                            gelernt, was bei der Entwicklung von WebServices/CRUD-APIs sowie Backend-Applikation von großer Hilfe ist.
+                            Basiskenntnisse besitze ich sonst auch in C++, C, php und R.
+                        </p>
+                    </div>
+                    <div class="tier-item">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <h2>Data Science</h2>
+                        <p>
+                            Ein Grund des Fokus auf meinen Bachelor in Wirtschaftsinformatik lag darin,
+                            dass mich die Arbeit mit Daten, vor allem auf technischer Ebene, sehr interessiert.
+                            Hierfür ist Python als Programmiersprache natürlich prädestiniert. gearbeitet habe ich
+                            dabei vor allem mit Pandas für die Datenspeicherung und Verarbeitung.
+                            Gelegentlich auch numpy für die Arbeit mit Arrays.
+                            Für die Visualisierung der entsprechenden Daten habe ich schnließend primär Matplotlib
+                            genutzt.
+                            Neben her stand im Fokus die Arbeit mit eigenen Implementationen von Machine-Learning
+                            Algorithmen,
+                            sowie die Arbeit mit der recht bekannten sklearn-Bibliothek.
+                        </p>
+                    </div>
+                    <div class="tier-item">
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <h2>Web Development</h2>
+                        <p>
+                            Vor allem im privaten Rahmen habe ich Projekte im Webdevelopment durchgeführt,
+                            da mich dieses fasziniert. So habe ich zunächst statische Seiten
+                            mit Html und CSS gebaut und (zunehmend komplexer) gestaltet, sowie angefangen
+                            Javascript für Funktionalität hinzuzufügen. Aktuell habe
+                            ich außerdem Projekte mit Vue.js, sowie mit React(JS) angefangen, um
+                            in die Entwicklung von komplexeren Webapplikation einzusteigen.
+                            Weiterhin habe arbeite ich in der Backend-Entwicklung aus Python heraus, unter anderem mit
+                            Flask und Django.
+                            Hier habe ich kleinere APIs sowie mehrere insteiger-Applikationen erstellt,
+                            die Arbeit an einer komplexeren Applikation ist aktuell in Arbeit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </section>
+    <section id="projects" class="projects">
+        <div class="title-heading">
+            <h2>Projekte</h2>
+            <p>Eine Kurzübersicht über einige meiner größeren Projekte</p>
+        </div>
+        <div class="project-item">
+            <div class="project-description has-margin-right">
+                <h2>Beschleunigung von Python-Implementationen</h2>
+                <p>
+                    Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                    Beschaffenheiten Python, besonders, wie eine Python Implementation ausgeführt wird und wie dies
+                    unter Umständen zu beschleunigen wäre.
+                    Hierfür wurde eine implementation des bekannten Conways Game of Life vorgenommen, zunächst in
+                    Python.
+                    Anschließend wurde diese erweitert durch Implementationen mit C++, mit Python in Verbindung mit
+                    Cython und mit C++ Extensions.
+                    Im letzten Schritt wurde GPU Programmierung mit CUDA implementiert und als Vergleichsmaßstab
+                    genommen.
+                </p>
+                <a href="#project-item-1" class="project-link more-info" role="button"><i
+                        class="fas fa-info-circle"></i> Mehr Info</a>
+                <a href="https://github.com/jonasjuenemann/BAProjekt" class="project-link" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                >
+            </div>
+            <div class="project-img">
+                <img src="images/Speed.png" alt=""/>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-img has-margin-right">
+                <img src="images/ML.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Machine-Learning Projekt</h2>
+                <p>
+                    Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                    faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
+                    Algorithmen verschafft.
+                    Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                    Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                    diese für Python bietet.
+                    Anschließend habe ich mir dann interessante Datensets gesucht, meist über
+                    <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                    um zu sehen, inwieweit sich
+                    ML-ALgorithmen nutzen lassen um aus diesen Daten aufschlussreiche Erkenntnisse ziehen zu können.
+                    Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
+                    genutzt.
+                </p>
+                <a href="#project-item-2" class="project-link more-info" role="button"><i
+                        class="fas fa-info-circle"></i> Mehr Info</a>
+                <a href="https://github.com/jonasjuenemann/MachineLearning" class="project-link" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-description has-margin-right">
+                <h2>Spotify-Applikation mit React</h2>
+                <p>
+                    Eine React-App, die in Verbindung mit der Nutzung der Spotify API funktioniert.
+                    Es können aus der Spotify Bibliothek Titel gesucht und in eine Playlist gespeichert werden.
+                    Diese Playlist kann wiederum automatisch in Spotify übertragen werden.
+                    Vorraussetzung für die Nutzung der App ist ein funktionierender Spotify Account. Die Anmeldung
+                    erfolgt dann über ein OAuth2 Verfahren.
+                </p>
+                <a href="#project-item-3" class="project-link more-info" role="button"><i
+                        class="fas fa-info-circle"></i> Mehr Info</a>
+                <a href="http://plbuilder.surge.sh/" class="project-link more-info" target="_blank"><i
+                        class="fas fa-laptop-code"></i> Live-Demo</a>
+                <a href="https://github.com/jonasjuenemann/playlistbuilder" class="project-link" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a>
+            </div>
+            <div class="project-img has-margin-right">
+                <img src="images/React.png" alt=""/>
+            </div>
+        </div>
+        <p id="project-text">Wenn Sie interessiert sind, wären <a href="projects.html#projects">hier</a> weitere
+            Projekte von mir finden.</p>
+
+        <hr/>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <p>
+            Der verlässlichste Weg mich zu erreichen, ist mir per Mail zu schreiben.
+            Hierfür kann gerne unten stehendes Kontaktformular genutzt werden.
+            Ansonsten steht darunter auch meine Mail Addresse, die gern genutzt werden kann.
+            In jedem Fall freue ich mich auf ihre Nachricht.
+            <br>
+            <br>
+            <i><strong>Jonas</strong></i>
+        </p>
+        <form role="form" id="reused_form" target="_blank"
+              action="https://formsubmit.co/ec0092f3024fc2d2f4e616aa50861fb8" method="POST">
+            <div class="name form-group">
+                <label for="name">
+                </label>
+                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+            </div>
+            <div class="email form-group">
+                <label for="email">
+                </label>
+                <input type="email" class="form-control" placeholder="Email-Addresse" id="email" name="email" required>
+            </div>
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_subject" value="Neue Email von meiner Website!">
+            <div class="message form-group">
+                <label for="message">
+                </label>
+                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Ihre Nachricht"
+                          maxlength="10000" rows="20"></textarea>
+            </div>
+            <div class="form-group">
+                <button data-tooltip="Ihre Nachricht wird mithilfe von formsubmit.co per Mail an mich geschickt. Sie werden aufgefordert, ein Captcha auszufüllen. Dies dient der Vermeidung von Spam, ich hoffe auf ihr
+                 Verständnis."
+                        type="submit" class="btn btn-lg btn-default pull-right tooltip">Senden →
+                </button>
+            </div>
+        </form>
+        <div class="container">
+            <p>
+                <a href="mailto:jonas.juenemann@gmx.de"
+                ><i class="fas fa-envelope-open"></i> jonas.juenemann@gmx.de</a
+                >
+            </p>
+            <p class="socials">
+                <a href="#" target="_blank"
+                ><i class="fa fa-github"> Github</i></a
+                >
+            </p>
+            <p class="socials">
+                <a href="#" target="_blank"><i class="fa fa-xing"> Xing</i></a>
+            </p>
+        </div>
+        <hr id="last-hr"/>
+    </section>
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html#landing-page" class="footer-nav-link">Home</a>
+            <a href="index.html#about" class="footer-nav-link">Über mich</a>
+            <a href="index.html#services" class="footer-nav-link">Skills</a>
+            <a href="index.html#projects" class="footer-nav-link">Projekte</a>
+            <a href="index.html#contact" class="footer-nav-link">Kontakt</a>
+        </div>
+        <div class="footer-coded">
+        </div>
+        <div class="footer-social socials">
+            <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-xing"></i></a>
+        </div>
+    </footer>
+    <div class="project-lightbox" id="project-item-1">
+        <div class="project-lightbox__content">
+            <a href="#!" class="close"></a>
+            <div class="lightbox__text">
+                <h3 class="project__title">Beschleunigung von Python-Implementationen</h3>
+                <p> Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                    Beschaffenheiten Pythons, im speziellen damit, wie eine Python Implementation ausgeführt wird und wie dieser Prozess
+                    unter Umständen zu beschleunigen wäre. Primäres Testobjekt war dabei eine
+                    Implementation des relativ bekannten Game of Life von J.H. Conway. </p>
+
+                <img class="Gol gif" src="images/GoL.gif" alt="Conways Game of Life"/>
+                <figcaption>Visualisierung des GoL auf einem 128x128 Feld (via matplotlibs FuncAnimation).</figcaption>
+
+
+                <p>Der Fokus des Projekts lag dabei nicht auf der algorithmischen Laufzeit im Sinne der O() Notation, sondern
+                    auf der Ausführung mittels bspw. anderer Möglichkeiten als der standardmäßig verwendeten CPython Implementation.
+                    Hierbei war zum einen die Auslagerung von Teilen des Codes nach C mittels Cython eine relevante Option.
+                    Zum Anderen die Auslagerung nach C++ und dem entsprechenden g++ Compiler mit bspw. pybinds11.</p>
+
+                <p>Als zweiten Schritt des Projektes wurde dann numba als Möglichkeit der "Auslagerung" in eine andere Ausführungsart
+                    innerhalb von Python betrachtet.
+                    Hierbei wird spezifisch der Python Interpreter umgangen, indem Just-In-Time mit der LLVM Architektur
+                    kompiliert wird, was tendenziell wesentliche Geschwindigkeits-Vorteile birgt.
+                    Betrachtet wurde hier neben der Geschwindigkeit auch Kompatibilität innerhalb von Python als wichtiger Faktor.</p>
+
+                <p>Als letztes wurde dann eine Auslagerung der Code Ausführung von der CPU auf die GPU betrachtet. Dies stellt für
+                    Python eine wirklich hervorragende Möglichkeit
+                    dar, da dies bei einer parallelen Ausführung auf den tausenden Kernen einer GPU den Prozess enorm beschleunigt.
+                    So wurde spezifisch für Python herausgestellt, wie (verhältnismäßig) leicht sich aus Python heraus auf der GPU
+                    arbeiten lässt.
+                    Gleichzeitig wurde zumindest angemerkt, dass die Installation und das Setup, gerade auf einer Windows-Maschine, einen
+                    durchaus beträchtlichen Aufwand darstellen kann.
+                    Im Rahmen des Projektes wurde die GPU_Programmierung dabei Nvidia's CUDA Framework verwendet.
+                    Spezifisch wurde im Rahmen des Projektes herausgestellt, wie viel schneller eine GPU Ausführung ist,
+                    auch im Vergleich mit einer C++ Ausführung.</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-lightbox" id="project-item-2">
+        <div class="project-lightbox__content">
+            <a href="#!" class="close"></a>
+            <div class="lightbox__text">
+                <h3 class="project__title">Machine Learning Project</h3>
+                <p> Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                    faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
+                    Algorithmen verschafft.
+                    Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                    Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                    diese für Python bietet.
+                    Diese habe ich daher auch an verschiedenen Stellen genutzt.
+                    Primärer Hintergrund war hier auch nicht die Neuentwicklung der Algorithmen, sondern diese möglichst
+                    einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
+                </p>
+                <p>
+                    Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen ML-Algorithmen.
+                    Diese waren mir noch aacus der Uni bekannt, und umfassen primär die Lineare Regession sowie die Multiple Lineare Regression.
+                    Anschließend wurden dann zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
+                    der K-Nearest Neighbor Algorithmus betrachtet.
+                    Später warem dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und
+                    der Naive Bayes Klassifzierer, der vor allem für die Einschätzung von Textnachrichten im Sinne des Natural Language Processing
+                    eine wichtige Rolle besitzt, im Fokus.
+                </p>
+                <p>
+                    Im letzten Schritt habe ich dann nicht überwachte ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
+                    hierfür habe ich dann bspw. einen (simplen) Handschriftserkenner mit sklearn gebaut.
+                </p>
+                <div class="hide" id="handwriting">
+                    <p>
+                        Probieren Sie diesen doch gerne einmal aus! Die Idee ist relativ simpel, Sie können in die unten stehenden Kästchen jeweils eine Zahl schreiben.
+                        Dann können Sie den Button "Überprüfen" klicken.
+                    </p>
+                    <p>
+                        An dieser Stelle werden dann ihre handschriftlichen Zahlen per JavaScript in eine 2D Matrix umgewandelt,
+                        die ein Programm verstehen kann. Anschließend wird dieses Array an eine von mir erstellte flask-API geschickt.
+                        In dieser wird dann mit K-Means-Algorithmus aus ihrer Handschrift mit sklearn und anhand eines Traningsdatensets (hoffentlich) korrekt ihre vierstellige
+                        Zahl ermittelt, und zurückgesendet.
+                        Meistens sind allerdings lediglich 2-3 der Zahlen korrekt erkannt, insbesonders mit der 3, 8 und 9 hat der Algorithmus zugegebenerweise etwas zu kämpfen,
+                        diese korrekt zu identifizieren.
+                    </p>
+                </div>
+                <p>
+                    Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den Anfängen des Deep-Learning.
+                    Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher hat mir an dieser
+                    auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und der sklearn Bibliothek beschäftigen wollte.
+                    Deep Learning und u.U. Natural Language Processing sind aber Themen, die ich in einem nächsten Projekt angehe.
+                </p>
+                <p>
+                    Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir üblicherweise interessante Datenset gesucht,
+                    eine große Hilfe war dabei <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                    dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine Menge möglicherweise hilfreicher
+                    Ressourcen in diesem Bereich.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="project-lightbox" id="project-item-3">
+        <div class="project-lightbox__content">
+            <a href="#!" class="close"></a>
+            <div class="lightbox__text">
+                <h3 class="project__title">Spotify-Applikation mit React</h3>
+                <p>
+                    In dem Bestreben, React weiter zu erkunden und zu lernen, habe ich ein Projekt entwickelt, dass
+                    React für eine Webapplikation benutzt, aus der aus auf die Spotify API zugegriffen werden kann.
+                    Die grundlegende Funktionalität der App ist dabei recht simpel, so ermöglicht diese das
+                    Zusammenstellen
+                    einer Playlist.
+                    Hierfür kann zunächst ein gewünschter Titel gesucht werden.
+                    Anschließend werden für diesen Titel entsprechende Spotify Ergebnisse vorgestellt.
+                    Titel aus den Ergebnis können dann wiederum zu einer Playlist hinzugefügt werden. Diese kann
+                    umbenannt
+                    werden und ist anschließend für den Spotify-Account verfügbar.
+                </p>
+                <p>
+                    Vorraussetzung für die Nutzung der App ist also ein funktionierender Spotify Account. Die Anmeldung
+                    erfolgt dann
+                    über ein OAuth2 Verfahren, bei dem man sich bei Spotify selbst anmelden muss.
+                    (Geschieht automatisch beim ersten Suchdurchlauf nach einem Titel).
+                    Das OAuth2 Verfahren erlaubt dadurch dabei eine vollständig Front-End basierte Nutzung der API ohne die
+                    Gefahr,
+                    API Keys zu gefährden.
+                </p>
+                <p>
+                    Die App ist ansonsten auch noch Work-in-Progress. Weitere Funktionalitäten, sowie eine etwas verbesserte
+                    User-Experience beim Anmeldeprozess
+                    sind aktuell in Arbeit.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>jQuery(function ($) {
+    $('.slider').sss();
+});</script>
 </body>
 </html>
