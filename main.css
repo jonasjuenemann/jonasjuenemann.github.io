@@ -599,15 +599,17 @@ hr {
 /* Services */
 
 .services {
-    padding: 3rem 0 0;
-    min-height: 40vh;
+    padding: 0 0;
+    min-height: 60vh;
     max-width: 90rem;
     margin: auto;
 }
 
 .services .container {
-    min-height: 40vh;
+    min-height: 60vh;
+    overflow: auto;
 }
+
 
 .title-heading {
     text-align: center;
@@ -663,7 +665,7 @@ hr {
 /* Projects */
 
 .projects {
-    padding: 3rem 0 0;
+    padding: 1rem 0 0;
     min-height: 120vh;
     max-width: 70rem;
     margin: auto;
