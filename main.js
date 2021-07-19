@@ -40,6 +40,11 @@ navLinks.forEach(link => {
 
 const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
+const moon = document.getElementsByClassName('moon')[0];
+console.log(moon)
+console.log(moon.classList)
+const sun = document.getElementsByClassName('sun')[0];
+console.log(sun.classList)
 const body = document.body;
 
 // Apply the cached theme on reload
@@ -47,6 +52,11 @@ const body = document.body;
 const theme = localStorage.getItem('theme');
 if (theme) {
     body.classList.add(theme);
+    if (theme === "light") {
+        sun.classList.toggle("hide")
+        moon.classList.toggle("hide")
+    }
+
 } else {
     body.classList.add('dark');
 }
@@ -54,12 +64,15 @@ if (theme) {
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
     localStorage.setItem('theme', 'dark');
+    sun.classList.toggle("hide")
+    moon.classList.toggle("hide")
 };
 
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
-
     localStorage.setItem('theme', 'light');
+    sun.classList.toggle("hide")
+    moon.classList.toggle("hide")
 };
 
 jQuery(document).ready(function ($) {

@@ -272,6 +272,14 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+.fa-sun {
+    width: 30px;
+    height: 30px;
+    background: var(--lingrad-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .dropdown {
     position: absolute;
     width: min(60vw, 300px);
