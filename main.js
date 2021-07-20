@@ -18,6 +18,16 @@ selectElement(".burger-menu-icon").addEventListener("click", () => {
 
 });
 
+// Show an element
+function show(elem) {
+    elem.style.display = 'block';
+}
+
+// Hide an element
+function hide(elem) {
+    elem.style.display = 'none';
+}
+
 document.querySelector(".theme-selector").addEventListener("click", () => {
     selectElement(".dropdown").classList.toggle("has-dropdown-active");
 });
@@ -53,8 +63,8 @@ const theme = localStorage.getItem('theme');
 if (theme) {
     body.classList.add(theme);
     if (theme === "light") {
-        sun.classList.toggle("hide")
-        moon.classList.toggle("hide")
+        sun.classList.remove("hide")
+        moon.classList.add("hide")
     }
 
 } else {
@@ -64,15 +74,15 @@ if (theme) {
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
     localStorage.setItem('theme', 'dark');
-    sun.classList.toggle("hide")
-    moon.classList.toggle("hide")
+    sun.classList.add("hide")
+    moon.classList.remove("hide")
 };
 
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
     localStorage.setItem('theme', 'light');
-    sun.classList.toggle("hide")
-    moon.classList.toggle("hide")
+    sun.classList.remove("hide")
+    moon.classList.add("hide")
 };
 
 jQuery(document).ready(function ($) {

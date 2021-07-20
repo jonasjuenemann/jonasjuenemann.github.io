@@ -17,12 +17,13 @@
     --bg-dropdown: rgba(55, 55, 55, 0.9);
     --border-color: rgba(249, 105, 1, 0.8);
     --bg-dark: rgba(6, 8, 17, 0.97);
-    --bg-light: rgba(15, 244, 250, 0.3);
+    --bg-light: rgba(212, 251, 255, 0.25);
     --font-poppins: "Poppins", sans-serif;
     --font-antic: 'Antic Didone', serif;
     --color-dark: #e7e7e7;
     --color-light: black;
     --bright-orange: rgba(249, 105, 14, 1);
+    --bright-blue: rgba(16, 2, 173, 0.9);
     --lingrad-dark: linear-gradient(
             135deg,
             rgba(249, 105, 14, 1) 50%,
@@ -35,16 +36,16 @@
     );
     --lingrad-light: linear-gradient(
             135deg,
-            rgba(249, 105, 14, 1) 50%,
-            rgb(253, 25, 3) 100%
+            rgba(12, 12, 12, 0.91) 50%,
+            rgba(16, 2, 173, 0.9) 100%
     );
     --lingrad-h-light: linear-gradient(
             to right,
-            rgba(249, 105, 14, 1) 30%,
-            rgb(253, 25, 3) 100%
+            rgba(12, 12, 12, 0.91) 30%,
+            rgba(16, 2, 173, 0.9) 100%
     );
     --lp-dark: radial-gradient(rgba(16, 2, 173, 0.9) 30%, rgba(12, 12, 12, 0.91) 80%), url(images/landing-page.png) center no-repeat;
-    --lp-light: radial-gradient(rgba(229, 229, 218, 0.72) 30%, rgba(15, 244, 250, 0.4) 80%), url(images/landing-page.png) center no-repeat;
+    --lp-light: radial-gradient(rgba(15, 244, 250, 0.4) 30%, rgba(212, 251, 255, 0.25) 80%), url(images/landing-page.png) center no-repeat;
     --nav-load-time: 500ms;
     --load-delay: 200ms;
     --lp-load-time: 800ms;
@@ -57,7 +58,8 @@
     --color: var(--color-light);
     --lingrad: var(--lingrad-light);
     --lingrad-h: var(--lingrad-h-light);
-    --lp: var(--lp-light)
+    --lp: var(--lp-light);
+    --link-color: var(--bright-blue);
 }
 
 .dark {
@@ -65,7 +67,8 @@
     --color: var(--color-dark);
     --lingrad: var(--lingrad-dark);
     --lingrad-h: var(--lingrad-h-dark);
-    --lp: var(--lp-dark)
+    --lp: var(--lp-dark);
+    --link-color: var(--bright-orange);
 }
 
 body {
@@ -86,7 +89,7 @@ html:hover {
 
 a {
     text-decoration: none;
-    color: rgba(249, 105, 14, 1);
+    color: var(--link-color);
     font-family: var(--font-antic);
 }
 
@@ -287,6 +290,7 @@ nav {
     left: -62px;
     top: -32px;
     background: var(--bg-dropdown);
+    color: var(--bright-orange);
 
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -317,6 +321,7 @@ nav {
     size: 0.7rem;
     padding-left: 10px;
     font-weight: bold;
+    color: var(--bright-orange);
 }
 
 .dropdown-item a::before {
@@ -524,6 +529,10 @@ nav {
     letter-spacing: 2px;
 }
 
+a.btn {
+    font-weight: 500;
+}
+
 .btn:hover {
     color: #fafafa;
     background-color: rgba(6, 8, 17, 0.91); /*1 -> fully visible*/
@@ -722,8 +731,9 @@ hr {
 
 .project-link {
     display: inline-block;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     font-size: 1.4rem;
+    font-family: "Font Awesome 5 Brands";
 }
 
 p#project-text > a {
@@ -738,7 +748,6 @@ p#project-text > a {
 .more-info {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
-    margin-right: 2rem;
 }
 
 /* Contact */

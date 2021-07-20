@@ -16,11 +16,14 @@
 :root {
     --bg-dropdown: rgba(55, 55, 55, 0.9);
     --border-color: rgba(249, 105, 1, 0.8);
-    --bg-dark: rgba(6, 8, 17, 0.91);
-    --bg-light: rgba(202, 236, 238, 0.91);
+    --bg-dark: rgba(6, 8, 17, 0.97);
+    --bg-light: rgba(212, 251, 255, 0.25);
+    --font-poppins: "Poppins", sans-serif;
+    --font-antic: 'Antic Didone', serif;
     --color-dark: #e7e7e7;
     --color-light: black;
-    --bright-orange: rgb(249, 105, 14);
+    --bright-orange: rgba(249, 105, 14, 1);
+    --bright-blue: rgba(16, 2, 173, 0.9);
     --lingrad-dark: linear-gradient(
             135deg,
             rgba(249, 105, 14, 1) 50%,
@@ -33,37 +36,43 @@
     );
     --lingrad-light: linear-gradient(
             135deg,
-            rgba(249, 105, 14, 1) 50%,
-            rgba(6, 8, 17, 0.91) 100%
+            rgba(12, 12, 12, 0.91) 50%,
+            rgba(16, 2, 173, 0.9) 100%
     );
     --lingrad-h-light: linear-gradient(
             to right,
-            rgba(249, 105, 14, 1) 30%,
-            rgba(6, 8, 17, 0.91) 100%
+            rgba(12, 12, 12, 0.91) 30%,
+            rgba(16, 2, 173, 0.9) 100%
     );
+    --lp-dark: radial-gradient(rgba(16, 2, 173, 0.9) 30%, rgba(12, 12, 12, 0.91) 80%), url(images/landing-page.png) center no-repeat;
+    --lp-light: radial-gradient(rgba(15, 244, 250, 0.4) 30%, rgba(212, 251, 255, 0.25) 80%), url(images/landing-page.png) center no-repeat;
+    --nav-load-time: 500ms;
+    --load-delay: 200ms;
+    --lp-load-time: 800ms;
 
 }
 
 .light {
     --bg: var(--bg-light);
     --color: var(--color-light);
-    --inv-color: var(--color-dark);
     --lingrad: var(--lingrad-light);
     --lingrad-h: var(--lingrad-h-light);
-    --border-color: black;
-    --button-color: rgba(55, 55, 55, 0.9);
+    --lp: var(--lp-light);
+    --link-color: var(--bright-blue);
+    --tech-button-color: rgba(55, 55, 55, 0.9);
+    --inv-color: white;
 }
 
 .dark {
     --bg: var(--bg-dark);
     --color: var(--color-dark);
-    --inv-color: var(--color-light);
     --lingrad: var(--lingrad-dark);
     --lingrad-h: var(--lingrad-h-dark);
-    --border-color: #e7e7e7;
-    --button-color: #e7e7e7;
+    --lp: var(--lp-dark);
+    --link-color: var(--bright-orange);
+    --tech-button-color: white;
+    --inv-color: black;
 }
-
 
 body {
     font-family: 'Antic Didone', serif;
@@ -207,6 +216,14 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+.fa-sun {
+    width: 30px;
+    height: 30px;
+    background: var(--lingrad-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .dropdown {
     position: absolute;
     width: min(60vw, 300px);
@@ -214,6 +231,7 @@ nav {
     left: -62px;
     top: -32px;
     background: var(--bg-dropdown);
+    color: var(--bright-orange);
 
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -244,6 +262,7 @@ nav {
     size: 0.7rem;
     padding-left: 10px;
     font-weight: bold;
+    color: var(--bright-orange);
 }
 
 .dropdown-item a::before {
@@ -355,14 +374,9 @@ nav {
 
 .landing-page {
     width: 100%;
-    height: 40vh;
-    color: #e7e7e7;
-    background: rgb(19, 19, 19);
-    background: radial-gradient(
-            rgba(13, 16, 77, 0.9) 30%,
-            rgba(12, 12, 12, 0.91) 100%
-    ),
-    url("images/landing-page.png") center no-repeat;
+    height: 50vh;
+    color: var(--color);
+    background: var(--lp);
     background-size: contain;
     position: relative;
 }
@@ -495,7 +509,7 @@ p#project-text > a {
     font-family: "Poppins", sans-serif;
     margin: 0.2rem;
     padding: 0.7rem;
-    background: var(--button-color);
+    background: var(--tech-button-color);
     border-radius: 50px;
     text-align: center;
     display: flex;
