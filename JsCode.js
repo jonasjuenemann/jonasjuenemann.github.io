@@ -588,7 +588,7 @@ function array() {
     console.log(wholeArray)
 
     const getData = async () => {
-        const url = 'http://jonasj.pythonanywhere.com/'
+        const url = 'https://jonasj.pythonanywhere.com/'
         data = JSON.stringify({data: wholeArray})
         //console.log(data)
         try {
