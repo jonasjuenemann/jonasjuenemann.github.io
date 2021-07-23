@@ -51,10 +51,10 @@ navLinks.forEach(link => {
 const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const moon = document.getElementsByClassName('moon')[0];
-console.log(moon)
-console.log(moon.classList)
+/*console.log(moon)
+console.log(moon.classList)*/
 const sun = document.getElementsByClassName('sun')[0];
-console.log(sun.classList)
+//console.log(sun.classList)
 const body = document.body;
 
 // Apply the cached theme on reload

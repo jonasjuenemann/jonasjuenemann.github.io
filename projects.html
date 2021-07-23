@@ -405,42 +405,94 @@
                 einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
             </p>
             <p>
-                Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen ML-Algorithmen.
-                Diese waren mir noch aus der Uni bekannt, und umfassen primär die Lineare Regession sowie die Multiple Lineare Regression.
-                Anschließend wurden dann zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
+                Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen
+                ML-Algorithmen.
+                Diese waren mir noch aus der Uni bekannt, und umfassen primär die Lineare Regession sowie die
+                Multiple Lineare Regression.
+                Anschließend wurden dann zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische
+                Regression und
                 der K-Nearest Neighbor Algorithmus betrachtet.
-                Später warem dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und
-                der Naive Bayes Klassifzierer, der vor allem für die Einschätzung von Textnachrichten im Sinne des Natural Language Processing
+                Später warem dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines,
+                Entscheidungsbäume und
+                der Naive Bayes Klassifzierer, der vor allem für die Einschätzung von Textnachrichten im Sinne des
+                Natural Language Processing
                 eine wichtige Rolle besitzt, im Fokus.
             </p>
             <p>
-                Im letzten Schritt habe ich dann nicht überwachte ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
+                Im letzten Schritt habe ich dann nicht überwachte ML-Algorithmen betrachtet, primär das Clustering
+                mittels dem K-Means Algorithmus,
                 hierfür habe ich dann bspw. einen (simplen) Handschriftserkenner mit sklearn gebaut.
             </p>
-            <div class="hide" id="handwriting">
+            <div class="" id="handwriting">
                 <p>
-                    Probieren Sie diesen doch gerne einmal aus! Sie können in die unten stehenden Kästchen jeweils eine Zahl schreiben.
-                    Dann können Sie den Button "Überprüfen" klicken.
+                    Probieren Sie diesen doch gerne einmal aus! Sie können in die unten stehenden Kästchen jeweils
+                    eine Zahl schreiben.
+                    Dann können Sie den Button "Check" klicken.
                 </p>
+                <div>
+
+                    <canvas id="myCanvas" width="80" height="80" style="border:2px solid black"></canvas>
+
+                    <canvas id="myCanvas2" width="80" height="80" style="border:2px solid black"></canvas>
+
+                    <canvas id="myCanvas3" width="80" height="80" style="border:2px solid black"></canvas>
+
+                    <canvas id="myCanvas4" width="80" height="80" style="border:2px solid black"></canvas>
+
+                    <br/><br/>
+                    <button onclick="clearArea();return false;">Clear Area</button>
+                    Line width : <select id="selWidth">
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="14" selected="selected">14</option>
+                    <option value="18">18</option>
+                </select>
+                    Color : <select id="selColor">
+                    <option value="#141c3a">black</option>
+                    <option value="#6400e4">purple</option>
+                    <option value="#4b35ef" selected="selected">royal-blue</option>
+                    <option value="#fa4359">red</option>
+                    <option value="#37c3be">mint</option>
+                    <option value="#ffc107">yellow</option>
+                    <option value="#cccccc">gray</option>
+                </select>
+
+                    <button onclick="array();return false;">Check</button>
+
+                </div>
+                <p id="solution"></p>
                 <p>
-                    An dieser Stelle werden dann ihre handschriftlichen Zahlen per JavaScript in eine 2D Matrix umgewandelt,
-                    die ein Programm verstehen kann. Anschließend wird dieses Array an eine von mir erstellte flask-API geschickt.
-                    In dieser wird mit dem K-Means-Algorithmus aus ihrer Handschrift mit sklearn und anhand eines Traningsdatensets ihre vierstellige
+                    An dieser Stelle werden dann ihre handschriftlichen Zahlen per JavaScript in eine 2D Matrix
+                    umgewandelt,
+                    die ein Programm verstehen kann. Anschließend wird dieses Array an eine von mir erstellte
+                    flask-API geschickt.
+                    In dieser wird mit dem K-Means-Algorithmus aus ihrer Handschrift mit sklearn und anhand eines
+                    Traningsdatensets ihre vierstellige
                     Zahl (hoffentlich) korrekt ermittelt, und zurückgesendet.
-                    Meistens sind allerdings lediglich 2-3 der Zahlen korrekt erkannt, besonders mit der 3, 8 und 9 hat der Algorithmus zugegebenerweise etwas Probleme,
+                    Meistens sind allerdings lediglich 2-3 der Zahlen korrekt erkannt, besonders mit der 3, 8 und 9
+                    hat der Algorithmus zugegebenerweise etwas Probleme,
                     diese korrekt zu identifizieren.
                 </p>
             </div>
             <p>
-                Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den Anfängen des Deep-Learning.
-                Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher hat mir an dieser
-                auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und der sklearn Bibliothek beschäftigen wollte.
-                Deep Learning und u.U. Natural Language Processing sind aber Themen, die ich in einem nächsten Projekt angehe.
+                Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den
+                Anfängen des Deep-Learning.
+                Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher
+                hat mir an dieser
+                auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und
+                der sklearn Bibliothek beschäftigen wollte.
+                Deep Learning und u.U. Natural Language Processing sind aber Themen, die ich in einem nächsten
+                Projekt angehe.
             </p>
             <p>
-                Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir üblicherweise interessante Datenset gesucht,
-                eine große Hilfe war dabei <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
-                dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine Menge möglicherweise hilfreicher
+                Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir üblicherweise interessante
+                Datenset gesucht,
+                eine große Hilfe war dabei <abbr
+                    title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen
+                bereitstellt, sowie auch eine Menge möglicherweise hilfreicher
                 Ressourcen in diesem Bereich.
             </p>
         </div>
@@ -486,7 +538,7 @@
         <div class="lightbox__text">
             <h3 class="project__title">FinanzDaten</h3>
             <p>
-                Da ich selber Spaß am Investieren in Aktien und Crypto-Währungen habe, habe ich relativ schnell ein Projekt
+                Da ich selber Spaß am Investieren in Aktien und Krypto-Assets habe, habe ich relativ schnell Projekte
                 gestartet, um
                 meine Programmierkenntnisse hierfür einsetzen zu können. Python hat sich hier als Programmiersprache für
                 die auf Datenanalyse ausgelegten Aufgaben recht natürlich angeboten.
