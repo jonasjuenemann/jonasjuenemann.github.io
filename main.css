@@ -813,7 +813,6 @@ form input {
     border-bottom: 2px solid var(--bright-orange);
     background-color: var(--bg);
     color: white;
-    text-transform: uppercase;
     opacity:  1;
 }
 form input:focus-within {
@@ -834,7 +833,6 @@ form textarea {
     border-radius: 4px;
     background-color: var(--bg);
     color: white;
-    text-transform: uppercase;
     opacity:  1;
     resize: none;
 }
